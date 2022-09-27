@@ -872,6 +872,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * after a narrowing primitive conversion.
      * @jls 5.1.3 Narrowing Primitive Conversions
      */
+    @Override
     public byte byteValue() {
         return (byte)value;
     }
@@ -881,6 +882,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * after a narrowing primitive conversion.
      * @jls 5.1.3 Narrowing Primitive Conversions
      */
+    @Override
     public short shortValue() {
         return (short)value;
     }
@@ -889,6 +891,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * Returns the value of this {@code Integer} as an
      * {@code int}.
      */
+    @Override
     public int intValue() {
         return value;
     }
@@ -899,6 +902,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * @jls 5.1.2 Widening Primitive Conversions
      * @see Integer#toUnsignedLong(int)
      */
+    @Override
     public long longValue() {
         return (long)value;
     }
@@ -908,6 +912,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * after a widening primitive conversion.
      * @jls 5.1.2 Widening Primitive Conversions
      */
+    @Override
     public float floatValue() {
         return (float)value;
     }
@@ -917,6 +922,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * after a widening primitive conversion.
      * @jls 5.1.2 Widening Primitive Conversions
      */
+    @Override
     public double doubleValue() {
         return (double)value;
     }
@@ -931,6 +937,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * @return  a string representation of the value of this object in
      *          base&nbsp;10.
      */
+    @Override
     public String toString() {
         return toString(value);
     }
